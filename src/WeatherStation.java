@@ -1,9 +1,5 @@
-import displays.CurrentConditionsDisplay;
-import displays.HeatIndexDisplay;
-import displays.WeatherData;
-
 public class WeatherStation {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
         CurrentConditionsDisplay display = new CurrentConditionsDisplay(weatherData);
         HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);

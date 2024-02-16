@@ -1,7 +1,3 @@
-package displays;
-
-import displays.Observer;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,14 +21,14 @@ public class WeatherData implements Subject {
         observers.remove(observer);
     }
 
-    public void setMeasurements(float temperature, float humidity, float pressure){
+    public void setMeasurements(float temperature, float humidity, float pressure) {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
         measurementsChanged();
     }
 
-    public void measurementsChanged(){
+    public void measurementsChanged() {
         notifyObserver();
     }
 
